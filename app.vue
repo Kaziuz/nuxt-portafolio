@@ -13,19 +13,28 @@ const closeModal2 = () => {
       <p>hola. Soy johnny</p>
       <p class="text-xl">Bienvenido</p>
     </h5>
-    <article
-      class="min-h-max my-12 flex flex-col items-center justify-center space-y-14 md:flex-row md:space-x-32 md:space-y-0 w-100">
-      <button class="circle" @click="modalStatus = true">
-        <span class="color-text">
-          Proyectos
-        </span>
-      </button>
-      <!-- <button class="circle">
-        <span class="color-text">
-          Proyectos
-        </span>
-      </button> -->
+    <article class="h-56 max-h-64 flex justify-center">
+      <div
+        class="flex flex-col items-center justify-center space-y-14 md:flex-row md:space-x-32 md:space-y-0 w-100">
+  
+        <button class="circle" @click="modalStatus = true">
+          <span class="color-text">
+            Proyectos
+          </span>
+        </button>
+      </div>
     </article>
+    <!-- <article class="bg-red-500 h-56 max-h-64 flex justify-center">
+      <div
+        class="flex flex-col items-center justify-center space-y-14 md:flex-row md:space-x-32 md:space-y-0 w-100">
+  
+        <button class="circle" @click="modalStatus = true">
+          <span class="color-text">
+            Proyectos
+          </span>
+        </button>
+      </div>
+    </article> -->
     <article class="color-text">
       <p class="subtitle text-justify">
         Soy una persona apasionada por las computadoras, considerándolas una herramienta excelente que nos permite crear y
