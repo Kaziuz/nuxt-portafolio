@@ -2,10 +2,10 @@
 const props = withDefaults(
   defineProps<{
     closeModal: (event: MouseEvent) => void,
-    statusModal: boolean
+    modalStatus: boolean
   }>
   (), {
-    statusModal: false
+    modalStatus: false
   }
 )
 
@@ -13,7 +13,7 @@ const props = withDefaults(
 
 <template>
   <div
-    v-if="props.statusModal"
+    v-if="props.modalStatus"
     class="absolute inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50"
   >
     <div
