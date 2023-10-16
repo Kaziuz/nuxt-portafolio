@@ -1,68 +1,48 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-const modalStatus = ref(false)
-const closeModal2 = () => {
-  modalStatus.value = false
-}
-
-
-</script>
+<script setup lang="ts"></script>
 <template>
-  <section class="flex flex-col justify-evenly min-h-screen background-color w-100">
-    <h5 class="color-text title text-6xl uppercase text-center">
-      <p>hola. Soy johnny</p>
-      <p class="text-xl">Bienvenido</p>
+  <section class="mx-4 md:mx-60 flex flex-col justify-evenly min-h-screen w-100">
+    <h5 class="color-text title text-6xl uppercase text-center md:text-left">
+      <p class="text-xl mt-4 md:-mt-2 tracking-wider">Bienvenido 👋 🍰 🎮 🛹 🌀 </p>
+      <p class="capitalize">soy johnny</p>
     </h5>
     <article class="h-56 max-h-64 flex justify-center">
-      <div
-        class="flex flex-col items-center justify-center space-y-14 md:flex-row md:space-x-32 md:space-y-0 w-100">
-  
-        <button class="circle" @click="modalStatus = true">
-          <span class="color-text">
-            Proyectos
-          </span>
+      <div class="flex flex-col items-center justify-center space-y-14 md:flex-row md:space-x-32 md:space-y-0 w-100">
+        <button class="circle">
+          <span class="title text-md uppercase tracking-wider">hola</span>
         </button>
       </div>
     </article>
-    <!-- <article class="bg-red-500 h-56 max-h-64 flex justify-center">
-      <div
-        class="flex flex-col items-center justify-center space-y-14 md:flex-row md:space-x-32 md:space-y-0 w-100">
-  
-        <button class="circle" @click="modalStatus = true">
-          <span class="color-text">
-            Proyectos
-          </span>
-        </button>
-      </div>
-    </article> -->
-    <article class="color-text">
+    <article class="color-text text-base md:text-lg">
       <p class="subtitle text-justify">
         Soy una persona apasionada por las computadoras, considerándolas una herramienta excelente que nos permite crear y
-        resolver numerosos problemas, especialmente en el ámbito de la web.
-        En la actualidad, se presentan muchos desafíos para desarrollar una interfaz de usuario eficaz y me entusiasma
-        encontrar soluciones a estos problemas.
-        Me caracterizo por estar en constante aprendizaje y mantenerme al día con las últimas tecnologías en torno al
-        desarrollo front end.
-        Además, disfruto creando prototipos con sistemas embebidos como Arduino y ESP8266.
-        En mi tiempo libre, practico skateboarding y me creo música con sintetizadores e instrumentos musicales.
-        Creo firmemente que la combinación de tecnología, deporte y arte enriquece mi espiritu y potencia mi creatividad
+        resolver numerosos problemas, especialmente en el ámbito de la web.En la actualidad, se presentan muchos desafíos para
+        desarrollar una interfaz de usuario eficaz y me entusiasma encontrar soluciones a estos problemas.Me caracterizo por estar
+        en constante aprendizaje y mantenerme al día con las últimas tecnologías en torno al desarrollo front end y la web en general.
+        Además, disfruto prototipando y creando sistemas embebidos con Arduino y ESP8266.
+        En mi tiempo libre, practico skateboarding y me gusta crear música con sintetizadores e instrumentos musicales.
+        Creo firmemente que la combinación de tecnología, deporte y arte enriquece mi espiritu y potencia mi creatividad.
       </p>
-      <div class="subtitle flex align-center items-center justify-around flex-row">
-        <p>Habilidades:</p>
-        <HtmlIcon />
-        <CssIcon />
-        <JavaScriptIcon />
-        <TypeScriptIcon />
-        <JsonIcon />
-        <VueIcon />
+      <div class="subtitle flex items-center mt-4 md:mt-10 space-x-3">
+        <p class="subtitle">Habilidades:</p>
+        <HtmlIcon size="30px" />
+        <CssIcon size="30px" />
+        <JavaScriptIcon size="30px" />
+        <TypeScriptIcon size="30px" />
+        <JsonIcon size="30px" />
+        <VueIcon size="30px" />
       </div>
-      <div class="flex justify-center">
-        <p class="subtitle color-text">
-          linkeding, github, gmail,
-        </p>
+      <div class="subtitle flex items-center mt-4 md:mt-10 space-x-3">
+        <p class="subtitle">Proyectos:</p>
+        <a class="hover:text-sky-600" target="_blank" href="https://www.malahierbatropical.com/radio/">
+          MalaHierba
+        </a>
       </div>
+      <div class="flex justify-center my-4">
+        <a href="https://github.com/kaziuz" target="_blank"><GithubIcon class="cursor-pointer" /></a>
+        <a href="mailto:johnnysepulveda988@gmail.com"><IconGmail class="cursor-pointer" /></a>
+      </div>
+      <p class="color-text text-center subtitle">Medellín - 2023</p>
     </article>
   </section>
-  <!-- modal -->
-  <Modal :modalStatus="modalStatus" :closeModal="closeModal2" />
+-->
 </template>
