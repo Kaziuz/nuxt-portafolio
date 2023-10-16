@@ -10,5 +10,8 @@ export default defineNuxtConfig({
     plugins: [
       svgLoader({})
     ]
-  }
+  },
+  components: [
+    { path: '~/components'}
+  ]
 })
