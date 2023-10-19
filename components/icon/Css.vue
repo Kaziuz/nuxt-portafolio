@@ -1,14 +1,16 @@
 <script setup lang="ts">
-defineProps({
-  fill: {
-    type: String,
-    default: '#FF6400'
-  },
-  size: {
-    type: String,
-    default: '50px'
-  }
+// HERE
+// https://nuxt.com/docs/guide/concepts/typescript
+interface Icon {
+  fill?: string
+  size?: string| number
+}
+
+withDefaults(defineProps<Icon>(), {
+  fill: '#FF6400',
+  size: '50px'
 })
+
 </script>
 
 <template>
