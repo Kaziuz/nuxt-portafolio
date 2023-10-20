@@ -1,22 +1,42 @@
 <script setup lang="ts">
-const data = await queryContent('/home').findOne()
-console.log('data', data)
+interface HomeData {
+  principal: string
+  subPrincipal: string
+  circle: string
+  description: string
+  habilities: string
+  projects: string
+  infoFooter: string
+}
+
+const fetchHomeData = await queryContent('/home').findOne()
+
+const homeDataView: HomeData = {
+  principal: fetchHomeData.principal,
+  subPrincipal: fetchHomeData.subPrincipal,
+  circle: fetchHomeData.circle,
+  description: fetchHomeData.description,
+  habilities: fetchHomeData.habilities,
+  projects: fetchHomeData.projects,
+  infoFooter: fetchHomeData.infoFooter,
+}
+
 </script>
 <template>
   <section class="mx-4 md:mx-60 flex flex-col justify-evenly min-h-screen w-100">
     <h5 class="color-text title text-6xl uppercase text-center md:text-left">
       <p class="text-xl mt-4 md:-mt-2 tracking-wider">
-        {{ data.title.principal ?? ''}}
+        {{ homeDataView.principal }}
       </p>
       <p class="capitalize">
-        {{ data.title.subPrincipal ?? ''}}
+        {{ homeDataView.subPrincipal }}
       </p>
     </h5>
     <article class="h-64 max-h-72 md:h-56 md:max-h-64 flex justify-center">
       <div class="flex flex-col items-center justify-center space-y-14 md:flex-row md:space-x-32 md:space-y-0 w-100">
         <button class="circle pointer-events-none">
           <span class="title text-md uppercase tracking-wider">
-            {{ data.circle }}
+            {{ homeDataView.circle }}
           </span>
         </button>
       </div>
@@ -31,10 +51,10 @@ console.log('data', data)
         </a>
       </div>
       <p class="subtitle text-justify">
-        {{ data.description }}
+        {{ homeDataView.description }}
       </p>
       <div class="subtitle flex items-center mt-4 md:mt-6 space-x-3">
-        <p class="subtitle text-sm">{{ data.habilities }}</p>
+        <p class="subtitle text-sm">{{ homeDataView.habilities }}</p>
         <IconHtml
           class="transition-all duration-500 ease-in-out transform hover:scale-125"
           size="30px"
@@ -61,7 +81,7 @@ console.log('data', data)
         />
       </div>
       <div class="subtitle flex items-center mt-4 md:mt-6 space-x-3">
-        <p class="subtitle text-sm">{{ data.projects }}</p>
+        <p class="subtitle text-sm">{{ homeDataView.projects }}</p>
         <a class="hover:text-sky-600 italic"
           target="_blank"
           href="https://www.malahierbatropical.com/radio/"
@@ -70,7 +90,7 @@ console.log('data', data)
         </a>
       </div>
       <p class="color-text text-center subtitle text-sm">
-        {{ data.infoFooter }}
+        {{ homeDataView.infoFooter }}
       </p>
     </article>
   </section>
