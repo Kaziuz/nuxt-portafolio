@@ -1,9 +1,8 @@
 <script setup lang="ts">
-defineProps({
-  size: {
-    type: String,
-    default: '50px'
-  }
+import { Icon } from '~/types/icon'
+
+withDefaults(defineProps<Icon>(), {
+  size: '50px'
 })
 </script>
 <template>

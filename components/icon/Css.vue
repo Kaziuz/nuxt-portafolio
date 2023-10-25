@@ -1,16 +1,10 @@
 <script setup lang="ts">
-// HERE
-// https://nuxt.com/docs/guide/concepts/typescript
-interface Icon {
-  fill?: string
-  size?: string| number
-}
+import { Icon } from '~/types/icon'
 
 withDefaults(defineProps<Icon>(), {
   fill: '#FF6400',
   size: '50px'
 })
-
 </script>
 
 <template>

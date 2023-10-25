@@ -1,13 +1,9 @@
 <script setup lang="ts">
-defineProps({
-  fill: {
-    type: String,
-    default: '#FF6400'
-  },
-  size: {
-    type: String,
-    default: '50px'
-  }
+import { Icon } from '~/types/icon'
+
+withDefaults(defineProps<Icon>(), {
+  fill: '#FF6400',
+  size: '50px'
 })
 </script>
 
