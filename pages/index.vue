@@ -30,20 +30,21 @@ onMounted(async () => {
 <template>
   <section class="mx-4 md:mx-60 flex flex-col justify-evenly min-h-screen w-100">
     <h5 class="color-text title text-6xl uppercase text-center md:text-left">
-      <p class="text-xl mt-4 md:-mt-2 tracking-wider">
+      <p class="capitalize">
+        {{ homeDataView?.circle }}
+      </p>
+      <p class="text-xl mt-4 md:mt-2 tracking-wider">
         {{ homeDataView?.principal }}
       </p>
-      <p class="capitalize">
-        {{ homeDataView?.subPrincipal }}
-      </p>
+      
     </h5>
     <article class="h-64 max-h-72 md:h-56 md:max-h-64 flex justify-center">
-      <div class="flex flex-col items-center justify-center space-y-14 md:flex-row md:space-x-32 md:space-y-0 w-100">
-        <button class="circle pointer-events-none">
-          <span class="title text-md uppercase tracking-wider">
-            {{ homeDataView?.circle }}
-          </span>
-        </button>
+      <div class="flex flex-col items-center justify-center space-y-14 md:flex-row md:space-y-0 w-auto">
+        <h2
+          class="welcome title text-white text-7xl md:text-8xl text-center uppercase tracking-wider"
+        >
+        {{ homeDataView?.subPrincipal }}    
+        </h2>
       </div>
     </article>
     <article class="color-text text-base md:text-lg">
@@ -112,3 +113,4 @@ onMounted(async () => {
     </article>
   </section>
 </template>
+
