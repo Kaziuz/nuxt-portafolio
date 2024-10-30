@@ -12,6 +12,9 @@ interface HomeData {
 }
 const homeDataView = ref<HomeData | null>(null)
 
+const date = new Date()
+const year = date.getFullYear()
+
 onMounted(async () => {
   const fetchHomeData = await queryContent('/home').findOne()
 
@@ -108,7 +111,7 @@ onMounted(async () => {
         </div>
       </div>
       <p class="color-text text-center subtitle text-sm">
-        {{ homeDataView?.infoFooter }}
+        {{ homeDataView?.infoFooter }} - {{ year }}
       </p>
     </article>
   </section>
