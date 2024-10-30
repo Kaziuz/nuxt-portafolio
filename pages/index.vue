@@ -65,7 +65,6 @@ onMounted(async () => {
         </a>
       </div>
       <!-- Projects -->
-      <!-- <article class="subtitle mt-4 md:mt-6 space-x-3 bg-rose-600"> -->
       <article class="subtitle">
         <h5 class="subtitle text-3xl text-center">{{ homeDataView?.projects }}</h5>
         <div class="flex items-center flex-col xl:flex-row xl:items-start gap-8 xl:gap-4 mt-4">
