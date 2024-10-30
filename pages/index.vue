@@ -65,76 +65,73 @@ onMounted(async () => {
         </a>
       </div>
       <!-- Projects -->
-      <article class="subtitle">
-        <h5 class="subtitle text-3xl text-center">{{ homeDataView?.projects }}</h5>
-        <div class="flex items-center flex-col xl:flex-row xl:items-start gap-8 xl:gap-4 mt-4">
-          <div class="flex items-center align-center flex-col ">
-            <a class="hover:text-sky-600 text-center"
-              target="_blank"
-              href="https://malahierbatropical.com/"
-            >
-              Toca <b class="italic">MALAHIERBA</b> para visitar la web
-              <NuxtImg
-                src="/img/malahierba.jpg"              
-                sizes="100vw sm:50vw md:400px"
-              />
-            </a>
-            <div class="">
-              <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
-              <p class="text-sm text-center">Vue3, Leaflet, Vuex, TailwindCSS, Axios</p>
-              <p class="mt-4">Malahierba es un proyecto parecido a un Netlabel, la diferencia es que todo el contenido musical proporcionado solo se hace con fines de divulgación.</p>
-              <p>En este proyecto en especifico aprendí a utilizar el <a href="https://vuejs.org/guide/built-ins/teleport.html" target="_blank" class="underline">teleport</a> de vue para sacar los iframes de youtube y hacer que se muestren en el sitio web.</p>
-            </div>
+      <article class="flex items-center flex-col xl:flex-row xl:items-start gap-8 xl:gap-4 mt-4">
+        <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
+          <a class="hover:text-sky-600 text-center"
+            target="_blank"
+            href="https://malahierbatropical.com/"
+          >
+            Toca <b class="italic">MALAHIERBA</b> para visitar la web
+            <NuxtImg
+              src="/img/malahierba.jpg"              
+              sizes="100vw sm:50vw md:400px"
+            />
+          </a>
+          <div class="">
+            <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <p class="text-sm text-center">Vue3, Leaflet, Vuex, TailwindCSS, Axios</p>
+            <p class="mt-4">Malahierba es un proyecto parecido a un Netlabel, la diferencia es que todo el contenido musical proporcionado solo se hace con fines de divulgación.</p>
+            <p>En este proyecto en especifico aprendí a utilizar el <a href="https://vuejs.org/guide/built-ins/teleport.html" target="_blank" class="underline">teleport</a> de vue para sacar los iframes de youtube y hacer que se muestren en el sitio web.</p>
           </div>
-          <div class="flex items-center align-center flex-col">
-            <a class="hover:text-sky-600 italic text-center"
-              target="_blank"
-              href="https://circulo-de-quintas.netlify.app/"
-            >
-              Toca <b class="italic">Círculo de Quintas</b> para visitar la web
-              <NuxtImg
-                src="/img/circulo-de-quintas.jpg"
-                sizes="100vw sm:50vw md:400px"
-              />
-            </a>
-            <div class="">
-              <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
-              <p class="text-sm text-center">Html, CSS, Javascript, D3.js</p>
-              <p class="mt-4">Circulo de Quintas es un proyecto que utiliza la biblioteca D3.js para crear un gráfico de torta que al presionarse un segmento, se muestra su escala y sus acordes relacionados.</p>
-              <p class="mt-4">En este proyecto aprendí a utilizar la biblioteca D3.js para crear gráficos svg interactivos, ademas de una herramienta que me sirve personalmente para la creación musical.</p>
-            </div>
+        </div>
+        <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
+          <a class="hover:text-sky-600 italic text-center"
+            target="_blank"
+            href="https://circulo-de-quintas.netlify.app/"
+          >
+            Toca <b class="italic">Círculo de Quintas</b> para visitar la web
+            <NuxtImg
+              src="/img/circulo-de-quintas.jpg"
+              sizes="100vw sm:50vw md:400px"
+            />
+          </a>
+          <div class="">
+            <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <p class="text-sm text-center">Html, CSS, Javascript, D3.js</p>
+            <p class="mt-4">Circulo de Quintas es un proyecto que utiliza la biblioteca D3.js para crear un gráfico de torta que al presionarse un segmento, se muestra su escala y sus acordes relacionados.</p>
+            <p class="mt-4">En este proyecto aprendí a utilizar la biblioteca D3.js para crear gráficos svg interactivos, ademas de una herramienta que me sirve personalmente para la creación musical.</p>
           </div>
-          <div class="flex items-center align-center flex-col">
-            <a class="hover:text-sky-600 text-center"
-              target="_blank"
-              href="https://bestllook.netlify.app/"
-            >
-              Toca <b class="italic">Bestllook</b> para visitar la web
-              <NuxtImg
-                src="/img/bestlook.jpg"
-                sizes="100vw sm:50vw md:400px"
-              />
-            </a>
-            <div class="">
-              <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
-              <p class="text-sm text-center">Html, CSS</p>
-              <p class="mt-4">BestLook is a simple layout that combine html, css3 and flexbox to create a simple web page.</p>
-              <p>Was a great experience learning how to use css in the professional form to create a responsive layout.</p>
-            </div>
+        </div>
+        <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
+          <a class="hover:text-sky-600 text-center"
+            target="_blank"
+            href="https://bestllook.netlify.app/"
+          >
+            Toca <b class="italic">Bestlook</b> para visitar la web
+            <NuxtImg
+              src="/img/bestlook.jpg"
+              sizes="100vw sm:50vw md:400px"
+            />
+          </a>
+          <div class="">
+            <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <p class="text-sm text-center">Html, CSS</p>
+            <p class="mt-4">BestLook is a simple layout that combine html, css3 and flexbox to create a simple web page.</p>
+            <p>Was a great experience learning how to use css in the professional form to create a responsive layout.</p>
           </div>
         </div>
       </article>
-      <p class="subtitle text-justify mt-4">
+      <p class="subtitle text-justify mt-4 xl:mt-12">
         Bienvenido a mi web, Me llamo Johnny y soy un desarrollador web que utiliza tecnologías como VueJS,TailwindCSS, JavaScript, HTML, CSS, entre otras para crear sitios web y aplicaciones de alta calidad.
         Me gusta explorar nuevas tecnologías y trabajar en equipo, esto me ha permitido aprender de los desarrolladores más experimentados y conocer otras herramientas y metodologías de desarrollo.
 
         Ademas de la web, me gusta el mundo de las criptomonedas y las tecnologías que se utilizan para su
         funcionamiento, me parece que son el futuro del dinero. Por otra parte, disfruto prototipando y creando sistemas embebidos con Arduino y ESP8266.
 
-        En mi tiempo libre, practico skateboarding, creo <a url="https://soundcloud.com/radionoiselab" target="_blank" class="underline">
+        En mi tiempo libre, practico skateboarding, creo <a href="https://soundcloud.com/radionoiselab" target="_blank" class="underline hover:text-sky-600">
           música con sintetizadores e instrumentos musicales</a>, hago parte del colectivo 
-          <a url="https://unloquer.org/" target="_blank" class="underline">Unloquer</a> 
-          donde realizamos actividades en torno al software y el hardware libre y finalmente me dedico a crear contenido para un canal de videojuegos llamado <a url="https://www.youtube.com/@EstadoBit" target="_blank" class="underline">EstadoBit</a>
+          <a href="https://unloquer.org/" target="_blank" class="underline hover:text-sky-600">Unloquer</a> 
+          donde realizamos actividades en torno al software y el hardware libre y finalmente me dedico a crear contenido para un canal de videojuegos llamado <a href="https://www.youtube.com/@EstadoBit" target="_blank" class="underline hover:text-sky-600">EstadoBit</a>
 
         Creo firmemente que la combinación de tecnología, deporte y arte enriquece mi espíritu y potencia mi creatividad.
       </p>
