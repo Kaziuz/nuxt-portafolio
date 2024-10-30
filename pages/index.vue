@@ -91,7 +91,7 @@ onMounted(async () => {
         <div class="flex items-center align-center flex-col">
           <a class="hover:text-sky-600 italic"
             target="_blank"
-            href="https://www.malahierbatropical.com/radio/"
+            href="https://malahierbatropical.com/"
           >
            * MalaHierba *
           </a>
