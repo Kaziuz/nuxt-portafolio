@@ -65,62 +65,149 @@ onMounted(async () => {
         </a>
       </div>
       <!-- Projects -->
-      <article class="flex items-center flex-col xl:flex-row xl:items-start gap-8 xl:gap-4 mt-4">
+      <article class="flex items-center flex-col xl:flex-row xl:items-start gap-8 xl:gap-14 mt-4">
+        <!-- Malahierba (2022) -->
         <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
-          <a class="hover:text-sky-600 text-center"
+          <a class="hover:text-sky-600 text-center text-md"
             target="_blank"
             href="https://malahierbatropical.com/"
           >
-            Toca <b class="italic">MALAHIERBA</b> para visitar la web
+            Toca <b class="italic text-orange-500">MalaHierba</b> para visitar la web
             <NuxtImg
-              src="/img/malahierba.jpg"              
+              src="/img/malahierba.jpg"
               sizes="100vw sm:50vw md:400px"
             />
           </a>
           <div class="">
-            <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
-            <p class="text-sm text-center">Vue3, Leaflet, Vuex, TailwindCSS, Axios</p>
-            <p class="mt-4">Malahierba es un proyecto parecido a un Netlabel, la diferencia es que todo el contenido musical proporcionado solo se hace con fines de divulgación.</p>
-            <p>En este proyecto en especifico aprendí a utilizar el <a href="https://vuejs.org/guide/built-ins/teleport.html" target="_blank" class="underline">teleport</a> de vue para sacar los iframes de youtube y hacer que se muestren en el sitio web.</p>
+            <h6 class="text-sm font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <div class="text-xs text-center mt-2 flex justify-center gap-2">
+              <span class="p-1 border border-orange-500">Vue3</span>
+              <span class="p-1 border border-orange-500">Leaflet</span>
+              <span class="p-1 border border-orange-500">Vuex</span>
+              <span class="p-1 border border-orange-500">TailWindCSS</span>
+              <span class="p-1 border border-orange-500">Axios</span>
+              <span class="p-1 border border-orange-500">Node.js</span>
+            </div>
+            <p class="mt-4 subtitle">Malahierba es un proyecto parecido a un Netlabel, la diferencia es que todo el contenido musical proporcionado solo se hace con fines de divulgación.</p>
+            <p class="subtitle">En este proyecto en especifico aprendí a utilizar el <a href="https://vuejs.org/guide/built-ins/teleport.html" target="_blank" class="underline">teleport</a> de vue para sacar los iframes de youtube y hacer que se muestren en el sitio web.</p>
           </div>
         </div>
+        <!-- Circulo de quintas (2024) -->
         <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
-          <a class="hover:text-sky-600 italic text-center"
+          <a class="hover:text-sky-600 text-center text-md"
             target="_blank"
             href="https://circulo-de-quintas.netlify.app/"
           >
-            Toca <b class="italic">Círculo de Quintas</b> para visitar la web
+            Toca <b class="italic text-orange-500">Quintas</b> para visitar la web
             <NuxtImg
               src="/img/circulo-de-quintas.jpg"
               sizes="100vw sm:50vw md:400px"
             />
           </a>
           <div class="">
-            <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
-            <p class="text-sm text-center">Html, CSS, Javascript, D3.js</p>
-            <p class="mt-4">Circulo de Quintas es un proyecto que utiliza la biblioteca D3.js para crear un gráfico de torta que al presionarse un segmento, se muestra su escala y sus acordes relacionados.</p>
-            <p class="mt-4">En este proyecto aprendí a utilizar la biblioteca D3.js para crear gráficos svg interactivos, ademas de una herramienta que me sirve personalmente para la creación musical.</p>
+            <h6 class="text-sm font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <div class="text-xs text-center mt-2 flex justify-center gap-2">
+              <span class="p-1 border border-orange-500">Html</span>
+              <span class="p-1 border border-orange-500">CSS</span>
+              <span class="p-1 border border-orange-500">JS</span>
+              <span class="p-1 border border-orange-500">D3.js</span>
+            </div>
+            <p class="mt-4 subtitle">Circulo de Quintas es un proyecto que utiliza la biblioteca D3.js para crear un gráfico de torta que al presionarse un segmento, se muestra su escala y sus acordes relacionados.</p>
+            <p class="subtitle">En este proyecto aprendí a utilizar la biblioteca D3.js para crear gráficos svg interactivos, ademas de una herramienta que me sirve personalmente para la creación musical.</p>
           </div>
         </div>
+        <!-- Bestlook (2020) -->
         <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
-          <a class="hover:text-sky-600 text-center"
+          <a class="hover:text-sky-600 text-center text-md"
             target="_blank"
             href="https://bestllook.netlify.app/"
           >
-            Toca <b class="italic">Bestlook</b> para visitar la web
+            Toca <b class="italic text-orange-500">BestLook</b> para visitar la web
             <NuxtImg
               src="/img/bestlook.jpg"
               sizes="100vw sm:50vw md:400px"
             />
           </a>
           <div class="">
-            <h6 class="text-xl font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
-            <p class="text-sm text-center">Html, CSS</p>
-            <p class="mt-4">BestLook is a simple layout that combine html, css3 and flexbox to create a simple web page.</p>
-            <p>Was a great experience learning how to use css in the professional form to create a responsive layout.</p>
+            <h6 class="text-sm font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <div class="text-xs text-center mt-2 flex justify-center gap-2">
+              <span class="p-1 border border-orange-500">Html</span>
+              <span class="p-1 border border-orange-500">CSS</span>
+            </div>
+            <p class="mt-4 subtitle">BestLook is a simple layout that combine html, css3 and flexbox to create a simple web page.</p>
+            <p class="subtitle">Was a great experience learning how to use css in the professional form to create a responsive layout.</p>
+          </div>
+        </div>
+        <!-- Luwica (2016)-->
+        <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
+          <a class="hover:text-sky-600 text-center text-md"
+            target="_blank"
+            href="https://luwica.netlify.app/"
+          >
+            Toca <b class="italic text-orange-500">LuWica</b> para visitar la web
+            <NuxtImg
+              src="/img/luwica.jpg"
+              sizes="100vw sm:50vw md:400px"
+            />
+          </a>
+          <div class="">
+            <h6 class="text-sm font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <div class="text-xs text-center mt-2 flex justify-center gap-2">
+              <span class="p-1 border border-orange-500">Html</span>
+              <span class="p-1 border border-orange-500">CSS</span>
+            </div>
+            <p class="mt-4 subtitle">Luwica fue un dispositivo con arquitectura digital y funcionamiento sencillo; una lámpara que puede ser encendida y apagada por medio de una interfaz de usuario que se accede por medio de wifi y que se manipula en el celular.</p>
+            <p class="subtitle">Finalmente fue un aparato para su momento de salida, 2016.</p>
           </div>
         </div>
       </article>
+      <!-- Projects -->
+      <!-- <article class="flex items-start flex-col xl:flex-row gap-8 xl:gap-14 mt-12"> -->
+        <!-- Luwica -->
+        <!-- <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
+          <a class="hover:text-sky-600 text-center text-md"
+            target="_blank"
+            href="https://luwica.netlify.app/"
+          >
+            Toca <b class="italic text-md text-orange-500">LuWica</b> para visitar la web
+            <NuxtImg
+              src="/img/luwica.jpg"
+              sizes="100vw sm:50vw md:400px"
+            />
+          </a>
+          <div class="">
+            <h6 class="text-sm font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <div class="text-base text-center mt-2 flex justify-center gap-2">
+              <span class="p-1 border border-orange-500">Html</span>
+              <span class="p-1 border border-orange-500">CSS</span>
+            </div>
+            <p class="mt-4 subtitle">Luwica fue un dispositivo con arquitectura digital y funcionamiento sencillo; una lámpara que puede ser encendida y apagada por medio de una interfaz de usuario que se accede por medio de wifi y que se manipula en el celular.</p>
+            <p class="subtitle">Finalmente fue un aparato para su momento de salida, 2016.</p>
+          </div>
+        </div> -->
+        <!-- other project -->
+        <!-- <div class="w-full xl:w-1/2 flex items-center align-center flex-col">
+          <a class="hover:text-sky-600 text-center text-md"
+            target="_blank"
+            href="https://luwica.netlify.app/"
+          >
+            Toca <b class="italic text-md text-orange-500">LuWica</b> para visitar la web
+            <NuxtImg
+              src="/img/luwica.jpg"
+              sizes="100vw sm:50vw md:400px"
+            />
+          </a>
+          <div class="">
+            <h6 class="text-sm font-semibold text-center">Tecnologías usadas en este proyecto:</h6>
+            <div class="text-base text-center mt-2 flex justify-center gap-2">
+              <span class="p-1 border border-orange-500">Html</span>
+              <span class="p-1 border border-orange-500">CSS</span>
+            </div>
+            <p class="mt-4 subtitle">Luwica fue un dispositivo con arquitectura digital y funcionamiento sencillo; una lámpara que puede ser encendida y apagada por medio de una interfaz de usuario que se accede por medio de wifi y que se manipula en el celular.</p>
+            <p class="subtitle">Finalmente fue un aparato para su momento de salida, 2016.</p>
+          </div>
+        </div> -->
+      <!-- </article> -->
       <p class="subtitle text-justify mt-4 xl:mt-12">
         Bienvenido a mi web, Me llamo Johnny y soy un desarrollador web que utiliza tecnologías como VueJS,TailwindCSS, JavaScript, HTML, CSS, entre otras para crear sitios web y aplicaciones de alta calidad.
         Me gusta explorar nuevas tecnologías y trabajar en equipo, esto me ha permitido aprender de los desarrolladores más experimentados y conocer otras herramientas y metodologías de desarrollo.
